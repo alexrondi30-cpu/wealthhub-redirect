@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  <html lang="it">
+  <head>
+  <meta charset="UTF-8">
+  <title>WealthHub - redirect</title>
+  </head>
+  <body>
+  <p id="msg">Reindirizzamento a WealthHub in corso...</p>
+  <a id="link" href="#">Tocca qui se non riparte da solo</a>
+<script>
+  var target = "wealthhub://eb-callback" + window.location.search;
+document.getElementById("link").href = target;
+window.location.href = target;
+</script>
+  </body>
+  </html>
+  
